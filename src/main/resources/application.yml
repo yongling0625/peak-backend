@@ -1,0 +1,36 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: peak-backend
+  profiles:
+      active: prod
+
+  #发送邮件
+  mail:
+    host: smtp.163.com
+    username: lfguangyong@163.com
+    password: ZSQFGCURMSHUXAXP
+    default-encoding: UTF-8
+
+wx:
+  token: mywebchat
+  appid: wx3464f9edf2ec1072
+  appsecret: 6e6fb8a1164e1808dcd53b55b136272c
+  callback-url: http://www.gy-peak.cn
+  mvc:
+    interceptor:
+      include-patterns: /wx/**
+
+
+# MyBatis-Plus Config
+mybatis-plus:
+  type-aliases-package: cn.gypeak.peakbackend.*.entity
+
+
+url: http://gy-peak.cn/
+
+toEmail: yongling0625@163.com

@@ -1,0 +1,14 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+
+  datasource:
+    url: jdbc:mysql://39.107.93.44:3306/gy-peak?useUnicode=true&characterEncoding=UTF-8
+    username: gy-peak
+    password: gy-peak.1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
